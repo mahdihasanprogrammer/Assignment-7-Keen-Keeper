@@ -27,36 +27,39 @@ const links = <>
 
 
     return(
-<div className=" bg-base-100 shadow-sm sm:flex justify-between items-center py-3 px-5">
 
-    <div className="flex items-center justify-between">
+    <div className='shadow bg-base-100'>
+        <div className="  sm:flex justify-between items-center py-4 px-5 md:px-8 lg:px-12 container mx-auto">
 
-        <h1 className='text-2xl font-bold'>Keen<span className='text-green-800'>Keeper</span></h1>
-        
-      <div className="dropdown">
-        <div tabIndex={0} role="button" className="btn btn-ghost px-0 text-2xl sm:hidden">
-            <RiMenu3Fill />
+            <div className="flex items-center justify-between">
+
+                <h1 className='text-2xl font-bold'>Keen<span className='text-green-800'>Keeper</span></h1>
+
+              <div className="dropdown">
+                <div tabIndex={0} role="button" className="btn btn-ghost px-0 text-2xl sm:hidden">
+                    <RiMenu3Fill />
+                </div>
+                <ul
+                  tabIndex="-1"
+                  className="menu menu-sm dropdown-content  right-0 bg-base-100 rounded-box z-1 mt-3 space-y-2 w-36 text-center text-base  shadow">
+                
+                       {links}
+                </ul>
+              </div>
+
+
+            </div>
+
+
+            <div className=" hidden sm:flex">
+              <ul className="flex items-center gap-6 px-1">
+                  {links}
+              </ul>
+            </div>
+
+
         </div>
-        <ul
-          tabIndex="-1"
-          className="menu menu-sm dropdown-content  right-0 bg-base-100 rounded-box z-1 mt-3 space-y-2 w-36 text-center text-base  shadow">
-
-               {links}
-        </ul>
-      </div>
-
-        
     </div>
-
-
-  <div className=" hidden sm:flex">
-    <ul className="flex items-center gap-6 px-1">
-        {links}
-    </ul>
-  </div>
-
-
-</div>
     )
 }
 
