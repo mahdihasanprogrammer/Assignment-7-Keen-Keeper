@@ -3,10 +3,26 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { ToastContainer } from 'react-toastify'
 import { createBrowserRouter, RouterProvider } from 'react-router'
+import ErrorPage from './pages/errorPage/ErrorPage'
+import MainLayout from './layout/MainLayout'
+import HomePage from './pages/homePage/HomePage'
+import TimeLinePage from './pages/timeline/TimeLinePage'
+import StatsPage from './pages/statsPage/StatsPage'
 
 
 const router = createBrowserRouter([
+ {errorElement: <ErrorPage/>},
 
+  {
+    path: '/', 
+    Component: MainLayout,
+    children:[
+      {index: true, Component: HomePage},
+      {path:'/timeline', Component: TimeLinePage},
+      {path:'/stats', Component:StatsPage},
+    ],
+      
+  }
 ])
 
 
@@ -17,6 +33,6 @@ createRoot(document.getElementById('root')).render(
 
       <RouterProvider router={router} />
       <ToastContainer />
-      
+
   </StrictMode>,
 )
