@@ -1,0 +1,10 @@
+/* added "Geist" font from google font */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+/* added tailwindcss and daisyUI */
+@import "tailwindcss";
+@plugin "daisyui";
+
+body{
+      font-family: "Geist", sans-serif;
+}
