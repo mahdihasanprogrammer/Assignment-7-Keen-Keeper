@@ -17,22 +17,22 @@ const BannerSection = () => {
             {/* card container */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center text-[#64748B] text-lg'>
 
-                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3'>
+                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3 rounded-xl'>
                         <h2 className='text-3xl font-semibold text-[#244D3F]'>10</h2>
                         <p>Total Friends</p>
                     </div>
 
-                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3'>
+                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3 rounded-xl'>
                         <h2 className='text-3xl font-semibold text-[#244D3F]'>3</h2>
                         <p>On Track</p>
                     </div>
 
-                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3'>
+                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3 rounded-xl'>
                         <h2 className='text-3xl font-semibold text-[#244D3F]'>6</h2>
                         <p>Need Attention</p>
                     </div>
 
-                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3'>
+                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3 rounded-xl'>
                         <h2 className='text-3xl font-semibold text-[#244D3F]'>12</h2>
                         <p>Total Interactions This Month</p>
                     </div>

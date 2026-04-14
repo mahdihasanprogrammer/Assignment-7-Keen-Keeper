@@ -8,7 +8,7 @@
     "status": "overdue",
     "tags": ["sports"],
     "bio": "Friend from school days. Loves football.",
-    "goal": 14,
+    "goal": 34,
     "next_due_date": "2026-04-10"
   },
   {
@@ -16,7 +16,7 @@
     "name": "Yamin",
     "picture": "https://i.ibb.co.com/9mTdtySQ/yamin.jpg",
     "email": "yamin@example.com",
-    "days_since_contact": 10,
+    "days_since_contact": 45,
     "status": "almost due",
     "tags": ["work"],
     "bio": "Met in college. Enjoys coding together.",
@@ -32,7 +32,7 @@
     "status": "on-track",
     "tags": ["hobby"],
     "bio": "Gaming partner. Plays online games regularly.",
-    "goal": 14,
+    "goal":32,
     "next_due_date": "2026-04-25"
   },
   {
@@ -44,7 +44,7 @@
     "status": "overdue",
     "tags": ["travel", "hobby"],
     "bio": "University friend. Loves tech discussions.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2026-04-12"
   },
   {
@@ -56,7 +56,7 @@
     "status": "almost due",
     "tags": ["work"],
     "bio": "Met online. Talks about business ideas.",
-    "goal": 14,
+    "goal":14,
     "next_due_date": "2026-04-17"
   },
   {
@@ -68,7 +68,7 @@
     "status": "on-track",
     "tags": ["family", "travel"],
     "bio": "Family friend. Visits often.",
-    "goal": 14,
+    "goal": 24,
     "next_due_date": "2026-04-28"
   },
   {
@@ -80,7 +80,7 @@
     "status": "overdue",
     "tags": ["sports"],
     "bio": "Cricket buddy. Plays on weekends.",
-    "goal": 14,
+    "goal": 25,
     "next_due_date": "2026-04-08"
   },
   {
@@ -92,7 +92,7 @@
     "status": "almost due",
     "tags": ["travel", "sports"],
     "bio": "Neighbor and good friend.",
-    "goal": 14,
+    "goal": 19,
     "next_due_date": "2026-04-19"
   },
   {
@@ -104,7 +104,7 @@
     "status": "on-track",
     "tags": ["work"],
     "bio": "Office colleague. Works on projects together.",
-    "goal": 14,
+    "goal": 13,
     "next_due_date": "2026-04-24"
   },
   {
@@ -116,7 +116,7 @@
     "status": "overdue",
     "tags": ["family"],
     "bio": "Met at mosque. Shares spiritual talks.",
-    "goal": 14,
+    "goal": 36,
     "next_due_date": "2026-04-13"
   },
   {
@@ -128,7 +128,7 @@
     "status": "almost due",
     "tags": ["hobby", "sports"],
     "bio": "Childhood friend. Lots of memories together.",
-    "goal": 14,
+    "goal": 18,
     "next_due_date": "2026-04-20"
   },
   {
@@ -140,7 +140,7 @@
     "status": "on-track",
     "tags": ["travel"],
     "bio": "Gym partner. Works out regularly.",
-    "goal": 14,
+    "goal": 22,
     "next_due_date": "2026-04-27"
   }
 ]
