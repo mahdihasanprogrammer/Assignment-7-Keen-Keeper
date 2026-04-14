@@ -2,7 +2,7 @@ import React from 'react';
 
 const BannerSection = () => {
     return (
-        <div className='pt-15 md:pt-20 pb-10 border-b-2 border-gray-300'>
+        <div className='pt-15 md:pt-20 pb-10 border-b-2 border-gray-200'>
             
             <div className='text-center pb-10 space-y-4'>
                 <h1 className='text-4xl leading-11 md:text-5xl font-bold text-[#1F2937]'>
