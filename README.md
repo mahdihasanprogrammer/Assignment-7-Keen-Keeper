@@ -1,16 +1,92 @@
-# React + Vite
+# 👥 KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+KeenKeeper is a simple and responsive web application that helps users maintain their friendships. Users can track their interactions (Call, Text, Video), set communication goals, and view their activity timeline and analytics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌐 Live & Repository Links
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🔗 Live Link: https://assignment-7-keen-keeper.vercel.app/
+* 🔗 GitHub Repo: https://github.com/mahdihasanprogrammer/Assignment-7-Keen-Keeper.git
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+* React.js
+* React Router DOM
+* Tailwind CSS & daisyUI
+* Recharts
+
+
+---
+
+## ✨ Key Features
+
+* 📋 Friend list with detailed information
+* 👤 Friend details page with actions
+* ⚡ Quick check-in (Call, Text, Video)
+* 📜 Timeline to track all interactions
+* 📊 Analytics page with pie chart
+* 🔔 Toast notifications for actions
+* 📱 Fully responsive design
+* 🚫 Custom 404 page
+* ⏳ Loading spinner while fetching data
+
+---
+
+## 📦 Dependencies
+
+* react
+* react-router
+* react-router DOM
+* recharts
+* tailwindcss
+* daisyui
+* react-icons
+* react-toastify
+* react-spinners
+
+---
+
+## ⚙️ How to Run Locally
+
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+2. Go to project folder:
+
+```
+cd your-repo-name
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Start the development server:
+
+```
+npm run dev
+```
+
+5. Open in browser:
+
+```
+http://localhost:5173
+```
+
+
+## 📬 Contact
+
+For any questions or suggestions, feel free to reach out.
+
+---
