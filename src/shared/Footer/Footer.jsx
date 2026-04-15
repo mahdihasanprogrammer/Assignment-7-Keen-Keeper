@@ -5,8 +5,8 @@ import { GrInstagram } from 'react-icons/gr';
 const Footer = () => {
     return (
      
-        <div className='bg-green-900  '>
-            <footer className="footer footer-horizontal footer-center  text-primary-content container mx-auto px-5 pt-10 pb-6 md:pt-20 md:pb-10 md:px-8 lg:px-12 gap-6">
+<div className='bg-green-900 '>
+  <footer className="footer footer-horizontal footer-center  text-primary-content container mx-auto px-5 pt-10 pb-6 md:pt-20 md:pb-10 md:px-8 lg:px-12 gap-6">
 
   <aside>
     

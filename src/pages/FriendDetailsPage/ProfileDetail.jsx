@@ -15,7 +15,7 @@ const ProfileDetail = ({friendDetail}) => {
         <div className='lg:col-span-2 space-y-5'>
 
                 {/* 1. Stats Cards  */}
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center text-[#64748B] text-base'>
+                <div className='grid grid-cols-2 lg:grid-cols-3 gap-6 text-center text-[#64748B] text-base'>
 
                     <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3 rounded-xl'>
                         <h2 className='text-2xl font-semibold text-[#244D3F]'>{days_since_contact}</h2>
@@ -27,7 +27,7 @@ const ProfileDetail = ({friendDetail}) => {
                         <p>Goal (Days)</p>
                     </div>
 
-                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3 rounded-xl'>
+                    <div className='bg-base-100 shadow h-32 flex flex-col justify-center items-center px-3 rounded-xl col-span-2 lg:col-span-1'>
                         <h2 className='text-2xl font-semibold text-[#244D3F]'>{next_due_date}</h2>
                         <p>Next Due</p>
                     </div>
@@ -55,7 +55,7 @@ const ProfileDetail = ({friendDetail}) => {
                 <h1 className='font-medium text-xl text-[#244D3F]'>Quick Check-In</h1>
 
                 {/* card container , call , message, video */}
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center text-[#1F2937] text-lg'>
+                <div className='grid  grid-cols-2 lg:grid-cols-3 gap-6 text-center text-[#1F2937] text-lg'>
 
                     {/* Call btn */}
                     <button onClick={() => {handleCall(friendDetail)}}
@@ -66,14 +66,14 @@ const ProfileDetail = ({friendDetail}) => {
                     
                     {/* Message btn */}
                     <button onClick={() => {handleMessage(friendDetail)}}
-                     className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl '>
+                     className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl'>
                         <h2 className='text-3xl font-semibold text-[#244D3F]'><LuMessageSquareText /></h2>
                         <p className='text-lg'>Text</p>
                     </button>
 
                     {/* Video btn */}
                     <button onClick={()=>{handleVideo(friendDetail)}}
-                    className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl '>
+                    className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl col-span-2 lg:col-span-1'>
                         <h2 className='text-3xl font-semibold text-[#244D3F]'><FiVideo /></h2>
                         <p className='text-lg'>Video</p>
                     </button>

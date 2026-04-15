@@ -14,6 +14,8 @@ const [historyCallMsgVideo, setHistoryCallMsgVideo] = useState([]);
 
         toast(`📞 Call with ${currentFriend.name }`);
 
+        delete  currentFriend.id;
+
         const updatedCurrentFriendData = {
             ...currentFriend,
             type:'Call',
@@ -28,10 +30,11 @@ const [historyCallMsgVideo, setHistoryCallMsgVideo] = useState([]);
     const handleMessage = (currentFriend) =>{
 
         toast(`💬 Message with ${currentFriend.name}`);
-        
+
+        delete  currentFriend.id;
         const updatedCurrentFriendData = {
             ...currentFriend,
-            type:'Message',
+            type:'Text',
             date: new Date().toDateString('en-GB'),
         }
 
@@ -43,6 +46,7 @@ const [historyCallMsgVideo, setHistoryCallMsgVideo] = useState([]);
 
         toast(`📹 Video with ${currentFriend.name}`);
 
+        delete  currentFriend.id;
         const updatedCurrentFriendData = {
             ...currentFriend,
             type:"Video",
@@ -57,6 +61,7 @@ const [historyCallMsgVideo, setHistoryCallMsgVideo] = useState([]);
 
     const data = {
         historyCallMsgVideo,
+        setHistoryCallMsgVideo,
         handleCall,
         handleMessage,
         handleVideo,
