@@ -10,7 +10,7 @@ const Footer = () => {
 
   <aside>
     
-    <h1 className="font-bold text-5xl ">KeenKeeper </h1>
+    <h1 className="font-bold text-5xl ">Keen<span className='text-green-600'>Keeper</span> </h1>
     <p className='text-gray-300'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
   </aside>
 

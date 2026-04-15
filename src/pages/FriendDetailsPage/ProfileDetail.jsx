@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiVideo } from 'react-icons/fi';
 import { LuMessageSquareText, LuPhoneCall } from 'react-icons/lu';
+import { friendContext } from '../../context/friendContextPage/FriendContextPage';
 
 const ProfileDetail = ({friendDetail}) => {
 
     const {days_since_contact, next_due_date,goal} = friendDetail;
+
+    const {handleCall,handleMessage,handleVideo} =useContext(friendContext);
+
+    console.log(handleCall);
 
     return (
         <div className='lg:col-span-2 space-y-5'>
@@ -53,19 +58,22 @@ const ProfileDetail = ({friendDetail}) => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center text-[#1F2937] text-lg'>
 
                     {/* Call btn */}
-                    <button className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl '>
+                    <button onClick={() => {handleCall(friendDetail)}}
+                     className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl '>
                         <h2 className='text-3xl  text-[#244D3F]'><LuPhoneCall /></h2>
                         <p className='text-lg'>Call</p>
                     </button>
                     
                     {/* Message btn */}
-                    <button className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl '>
+                    <button onClick={() => {handleMessage(friendDetail)}}
+                     className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl '>
                         <h2 className='text-3xl font-semibold text-[#244D3F]'><LuMessageSquareText /></h2>
                         <p className='text-lg'>Text</p>
                     </button>
 
                     {/* Video btn */}
-                    <button className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl '>
+                    <button onClick={()=>{handleVideo(friendDetail)}}
+                    className='btn shadow h-28 flex flex-col justify-center items-center px-3 rounded-xl '>
                         <h2 className='text-3xl font-semibold text-[#244D3F]'><FiVideo /></h2>
                         <p className='text-lg'>Video</p>
                     </button>

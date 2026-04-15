@@ -9,6 +9,7 @@ import HomePage from './pages/homePage/HomePage'
 import TimeLinePage from './pages/timeline/TimeLinePage'
 import StatsPage from './pages/statsPage/StatsPage'
 import FriendDetailsPage from './pages/FriendDetailsPage/FriendDetailsPage'
+import FriendContextPage from './context/friendContextPage/FriendContextPage'
 
 
 const router = createBrowserRouter([
@@ -38,8 +39,14 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
-      <RouterProvider router={router} />
-      <ToastContainer />
+ <FriendContextPage>
+
+        <RouterProvider router={router} />
+        <ToastContainer 
+        position="top-center"
+        autoClose={2000} />
+
+ </FriendContextPage>
 
   </StrictMode>,
 )

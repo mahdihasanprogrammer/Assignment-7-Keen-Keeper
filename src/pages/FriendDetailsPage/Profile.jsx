@@ -25,7 +25,8 @@ const Profile = ({friendDetail}) => {
 
                 <div className='flex gap-2 justify-center items-center mt-3'>
                     {
-                    tags.map(tag => <span className='badge rounded-full bg-green-100 text-[#244D3F] font-medium'>{tag}</span>)
+                    tags.map((tag, index)=> <span key ={index}
+                    className='badge rounded-full bg-green-100 text-[#244D3F] font-medium'>{tag}</span>)
                     }
                 </div>
 
