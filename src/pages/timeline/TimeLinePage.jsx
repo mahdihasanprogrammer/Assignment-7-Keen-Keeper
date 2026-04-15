@@ -9,8 +9,8 @@ import video_icon from '../../../public/video.png';
 
 const TimeLinePage = () => {
 
-      const {historyCallMsgVideo} = useContext(friendContext);
-     
+    const {historyCallMsgVideo} = useContext(friendContext);
+    const [sort , setSort] = useState(false);
 
 
     
@@ -23,7 +23,13 @@ const TimeLinePage = () => {
             '>Filter timeline</button>
 
 
-            {/* timeline card */}
+            {historyCallMsgVideo.length ===0 &&
+             <div className=' bg-base-100
+              shadow-lg flex items-center justify-center p-5 md:p-10 rounded-2xl h-[50vh]'>
+                <h1 className='text-3xl  font-semibold text-gray-700'>No data found</h1>
+            </div>}
+
+            {/* timeline cards */}
             <div className='space-y-4'>
                 {
                 historyCallMsgVideo.map(history => 

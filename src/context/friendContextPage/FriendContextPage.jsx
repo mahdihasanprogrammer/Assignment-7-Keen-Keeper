@@ -27,7 +27,7 @@ const [historyCallMsgVideo, setHistoryCallMsgVideo] = useState([]);
 
     const handleMessage = (currentFriend) =>{
 
-        toast.success(`💬 Message with ${currentFriend.name}`);
+        toast(`💬 Message with ${currentFriend.name}`);
         
         const updatedCurrentFriendData = {
             ...currentFriend,
@@ -41,7 +41,7 @@ const [historyCallMsgVideo, setHistoryCallMsgVideo] = useState([]);
 
     const handleVideo = (currentFriend) =>{
 
-        toast.success(`📹 Video with ${currentFriend.name}`);
+        toast(`📹 Video with ${currentFriend.name}`);
 
         const updatedCurrentFriendData = {
             ...currentFriend,
