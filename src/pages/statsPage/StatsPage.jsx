@@ -50,7 +50,7 @@ const data = [
             dataKey="value"
             isAnimationActive={true}
           />
-          <Legend iconType='circle' wrapperStyle={{marginBottom :'-16px'}}/>
+          <Legend iconType='circle' wrapperStyle={{marginBottom :'-15px'}}/>
           <Tooltip/>
         </PieChart>}
        </div>
