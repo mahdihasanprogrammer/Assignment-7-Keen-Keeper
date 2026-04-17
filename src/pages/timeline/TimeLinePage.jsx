@@ -4,7 +4,7 @@ import call_icon from '../../assets/call.png'
 import text_icon from '../../assets/text.png';
 import video_icon from '../../assets/video.png';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
-import { FriendContext } from '../../context/friendContext';
+import { FriendContext } from '../../context/FriendContext';
 
 
 

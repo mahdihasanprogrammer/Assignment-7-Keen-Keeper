@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Legend, Pie, PieChart, Tooltip } from 'recharts';
-import { FriendContext } from '../../context/friendContext';
+import { FriendContext } from '../../context/FriendContext';
 
 
 const StatsPage = () => {

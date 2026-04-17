@@ -1,6 +1,6 @@
 import React from 'react';
 import FriendCard from '../../shared/ui/FriendCard/FriendCard';
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData,   useParams } from 'react-router';
 import ErrorPage from '../errorPage/ErrorPage';
 import Profile from './Profile';
 import ProfileDetail from './ProfileDetail';
@@ -9,13 +9,13 @@ const FriendDetailsPage = () => {
 
     const {userId} = useParams();
 
+
     const friendsData = useLoaderData();
-    console.log( 'this use loader data',userId,friendsData)
+    // console.log( 'this use loader data',userId,friendsData);
+
 
     const friendDetail = friendsData.find(friend => friend.id == userId);
     
-   
-
 
     return (
         <div>

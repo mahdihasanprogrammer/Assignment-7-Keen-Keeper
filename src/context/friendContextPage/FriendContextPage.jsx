@@ -1,7 +1,7 @@
 import React, {  Children, useState } from 'react';
 
 import { toast } from 'react-toastify';
-import { FriendContext } from '../friendContext';
+import { FriendContext } from '../FriendContext';
 
 
 
@@ -58,7 +58,7 @@ const [historyCallMsgVideo, setHistoryCallMsgVideo] = useState([]);
         setHistoryCallMsgVideo([...historyCallMsgVideo, updatedCurrentFriendData])
     }
 
-    console.log(historyCallMsgVideo);
+
 
     const data = {
         historyCallMsgVideo,

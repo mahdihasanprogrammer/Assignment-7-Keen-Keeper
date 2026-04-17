@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { FiVideo } from 'react-icons/fi';
 import { LuMessageSquareText, LuPhoneCall } from 'react-icons/lu';
-import { FriendContext } from '../../context/friendContext';
+import { FriendContext } from '../../context/FriendContext';
 
 
 const ProfileDetail = ({friendDetail}) => {
@@ -10,7 +10,6 @@ const ProfileDetail = ({friendDetail}) => {
 
     const {handleCall,handleMessage,handleVideo} =useContext(FriendContext)
 
-    console.log(handleCall);
 
     return (
         <div className='lg:col-span-2 space-y-5'>

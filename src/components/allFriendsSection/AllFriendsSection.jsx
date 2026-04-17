@@ -1,13 +1,15 @@
 import React, { use } from 'react';
 import FriendCard from '../../shared/ui/FriendCard/FriendCard';
 
+
 const friendDataPromise =  fetch('/FriendData.json').then(res =>res.json());
 
 const AllFriendsSection = () => {
 
 
 const friendData = use(friendDataPromise);
-console.log(friendData)
+
+
 
     return (
         <div className='pt-10 pb-15 md:pb-20 space-y-4'>

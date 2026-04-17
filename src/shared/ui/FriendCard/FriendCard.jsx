@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const FriendCard = ({friend}) => {
-console.log(friend)
+
     return (
         <Link to={`/friendDetails/${friend.id}`}
          className='bg-base-100 shadow p-10 
@@ -18,7 +18,8 @@ console.log(friend)
 
                 <div className='flex gap-2 justify-center items-center mt-3'>
                     {
-                    friend.tags.map(tag => <span className='badge rounded-full bg-green-100 text-[#244D3F] font-medium'>{tag}</span>)
+                    friend.tags.map((tag,index) => <span key={index}
+                         className='badge rounded-full bg-green-100 text-[#244D3F] font-medium'>{tag}</span>)
                     }
                 </div>
 
