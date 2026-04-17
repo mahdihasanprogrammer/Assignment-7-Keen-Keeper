@@ -1,8 +1,9 @@
-import React, {  createContext, useState } from 'react';
+import React, {  Children, useState } from 'react';
 
 import { toast } from 'react-toastify';
+import { FriendContext } from '../friendContext';
 
-export const friendContext = createContext();
+
 
 const FriendContextPage = ({children}) => {
    
@@ -29,7 +30,7 @@ const [historyCallMsgVideo, setHistoryCallMsgVideo] = useState([]);
 
     const handleMessage = (currentFriend) =>{
 
-        toast(`💬 Message with ${currentFriend.name}`);
+        toast.success(`💬 Message with ${currentFriend.name}`);
 
         delete  currentFriend.id;
         const updatedCurrentFriendData = {
@@ -71,9 +72,9 @@ const [historyCallMsgVideo, setHistoryCallMsgVideo] = useState([]);
 
 
     return (
-     <friendContext.Provider value={data}>
-        {children}
-     </friendContext.Provider>
+        <FriendContext.Provider value={data}>
+            {children}
+        </FriendContext.Provider>
     );
 };
 

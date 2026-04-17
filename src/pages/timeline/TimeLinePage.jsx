@@ -1,9 +1,11 @@
 import React, { useContext, useState } from 'react';
-import { friendContext } from '../../context/friendContextPage/FriendContextPage';
-import call_icon from '../../../public/call.png';
-import text_icon from '../../../public/text.png';
-import video_icon from '../../../public/video.png';
+
+import call_icon from '../../assets/call.png'
+import text_icon from '../../assets/text.png';
+import video_icon from '../../assets/video.png';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { FriendContext } from '../../context/friendContext';
+
 
 
 
@@ -11,9 +13,9 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 const TimeLinePage = () => {
 
-    const {historyCallMsgVideo} = useContext(friendContext);
+    const {historyCallMsgVideo} = useContext(FriendContext)
     const [filteredData, setFilteredData] = useState(historyCallMsgVideo);
-    const [sort, setSort] = useState(false);
+  
   
 
 
@@ -45,10 +47,10 @@ const TimeLinePage = () => {
             <h1 className='text-[#1F2937] text-4xl md:text-5xl font-bold'>Timeline</h1>
 
             <select onClick={handleSelected}
-             name="" id="" 
-             className='select bg-base-100 shadow py-2 px-6 border-double border-2 rounded-md shadow-green-400 outline-0 space-y-2'>
+             name="" id="" defaultValue=""
+             className=' select bg-base-100 shadow py-2 px-6 border-double border-2 rounded-md shadow-green-400 outline-0 space-y-2'>
 
-                <option className='bg-base-300' selected disabled value="Filter timeline">Filter timeline</option>
+                <option className='bg-base-300' value=''  disabled >Filter timeline</option>
                 <option className='bg-base-300'  value="All data">All data</option>
                 <option className='bg-base-300' value="Call">Call</option>
                 <option className='bg-base-300' value="Text">Text</option>

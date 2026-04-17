@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
 import { FiVideo } from 'react-icons/fi';
 import { LuMessageSquareText, LuPhoneCall } from 'react-icons/lu';
-import { friendContext } from '../../context/friendContextPage/FriendContextPage';
+import { FriendContext } from '../../context/friendContext';
+
 
 const ProfileDetail = ({friendDetail}) => {
 
     const {days_since_contact, next_due_date,goal} = friendDetail;
 
-    const {handleCall,handleMessage,handleVideo} =useContext(friendContext);
+    const {handleCall,handleMessage,handleVideo} =useContext(FriendContext)
 
     console.log(handleCall);
 
